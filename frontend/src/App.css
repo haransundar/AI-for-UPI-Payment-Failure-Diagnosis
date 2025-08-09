@@ -1,0 +1,86 @@
+.App {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.transaction-card {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.transaction-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+}
+
+.transaction-card.selected {
+  border: 2px solid #1976d2;
+  background-color: #e3f2fd;
+}
+
+.failure-chip {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.success-chip {
+  background-color: #e8f5e8;
+  color: #2e7d32;
+}
+
+.diagnosis-section {
+  margin-bottom: 24px;
+}
+
+.diagnosis-section h6 {
+  margin-bottom: 12px;
+  color: #1976d2;
+}
+
+.resolution-steps {
+  padding-left: 0;
+}
+
+.resolution-steps li {
+  list-style: none;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.resolution-steps li:before {
+  content: "✓ ";
+  color: #4caf50;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.confidence-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.confidence-bar {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  flex: 1;
+}
+
+.confidence-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.confidence-high {
+  background-color: #4caf50;
+}
+
+.confidence-medium {
+  background-color: #ff9800;
+}
+
+.confidence-low {
+  background-color: #f44336;
+}
