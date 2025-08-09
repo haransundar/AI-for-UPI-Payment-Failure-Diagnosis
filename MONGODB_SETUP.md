@@ -63,7 +63,7 @@ mongosh --eval "db.adminCommand('ping')"
 2. **Create Cluster**: Choose free tier (M0) for development
 3. **Get Connection String**: 
    ```
-   mongodb+srv://username:password@cluster.mongodb.net/upi_diagnosis
+   mongodb+srv://your_username:your_password@your_cluster.mongodb.net/upi_diagnosis
    ```
 4. **Update Environment**: Add to your `.env` file
 
@@ -95,10 +95,10 @@ MONGODB_URL=mongodb://localhost:27017
 DATABASE_NAME=upi_diagnosis
 
 # For MongoDB Atlas (cloud)
-# MONGODB_URL=mongodb+srv://username:password@cluster.mongodb.net/
+# MONGODB_URL=mongodb+srv://your_username:your_password@your_cluster.mongodb.net/
 
 # For Docker with authentication
-# MONGODB_URL=mongodb://admin:password@localhost:27017/upi_diagnosis?authSource=admin
+# MONGODB_URL=mongodb://your_admin:your_password@localhost:27017/upi_diagnosis?authSource=admin
 ```
 
 ---
@@ -382,7 +382,7 @@ The system continues working with limited functionality.
 ### **Environment Variables (Production)**
 ```bash
 # Production MongoDB Atlas
-MONGODB_URL=mongodb+srv://prod_user:secure_password@production-cluster.mongodb.net/upi_diagnosis_prod?retryWrites=true&w=majority
+MONGODB_URL=mongodb+srv://your_prod_user:your_secure_password@your-production-cluster.mongodb.net/upi_diagnosis_prod?retryWrites=true&w=majority
 DATABASE_NAME=upi_diagnosis_prod
 
 # Connection pool settings
